@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.navbar{
+    position: fixed;
+    background-color: transparent;
+    width: 100%;
+    padding: 30px 0;
+    top: 0;
+    z-index: 100;
+    line-height: 20px;
+}
+
+.inner-width{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    font-family: 'Mooli', sans-serif;
+    color: #fff;
+    cursor: pointer;
+}
+
+.logo span{
+    font-size: 60px;
+    color: #ff0000e1;
+}
+
+.navbar-menu a{
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Mooli', sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 35px;
+    display: inline-block;
+}
+
+.navbar-menu a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 1.8px;
+    background-color: #f4f4f4;
+    transition: width .3s;
+}
+
+.navbar-menu a:hover::after{
+    width: 100%;
+}
+
+#home{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .content1{
+    background-color: #745c41;
+    background-image: url(./images/background11.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .content2{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)),url(./images/background5.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .content1 .content{
+    color: #b8adad;
+    padding: 20px;
+    position: absolute;
+    left: 150px;
+    top: 340px;
+    text-align: left;
+    width: 500px;
+    height: 317px;
+  }
+  .content p{
+    font-size: 40px;
+    line-height: 25px;
+    font-weight: 500;
+    letter-spacing: 1.1px;
+    font-family: 'Raleway',sans-serif;
+  }
+  .content button{
+    padding: 17px 25px;
+    margin-top: 30px;
+    background-color: transparent;
+    border: 0.5rcap;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    font-family: 'Raleway',sans-serif;
+    font-family: 'Dancing Script', cursive;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s;
+  }
+  .content button:hover{
+    color: #fff;
+    border: 1px ;
+  }
+  .social-container{
+    position: absolute;
+    left: 40px;
+    bottom: 30%;
+  }
+  .social-icons{
+    list-style: none;
+  }
+  .social-icons li{
+    margin: 35px 0;
+  }
+  .social-icons li i{
+    color: rgba(239, 226, 226, 0.77);
+    font-size: 20px;
+  }
+  .social-icons li a:hover i{
+    transform: scale(1.5);
+    color: #000000;
+    transition: all .2s ease-in-out;
+  }
+  .social-icons::before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 150px;
+    top: -170px;
+    left: 8px;
+    background-color: #d1c3c3b0;
+  }
+  .social-icons::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 150px;
+    bottom: -170px;
+    left: 8px;
+    background-color: #d1c3c3b0;
+  }
+  .content2 h1{
+    position: absolute;
+    left: 200px;
+    top: 240px;
+    font-size: 80px;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 500;
+    color: #ff0e0e;
+    letter-spacing: 8px;
+  }
+  .content2 h1 span{
+    color: #fec458;
+  }
+
+  .nav-search{
+    display: flex;
+    background-color: pink;
+    justify-content: space-evenly;
+    width: 620px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.search-select{
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+}
+
+.search-input{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+
+.search-icon {
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: #d61818;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #0f1111
+}
+
+.nav-search:hover {
+    border: 2px solid rgb(0, 0, 0);
+}
